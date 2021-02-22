@@ -12,6 +12,7 @@
     --title: #2E384D;
     --red: #E83F5B;
     --green: #4CD62B;
+    --yellow:#ff0;
     --blue: #5965E0;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
@@ -79,6 +80,16 @@ a {
 
    height: 4px;
    border-radius: 4px;
-   background: var(--green); 
+   background: var(--yellow); 
 
+}
+
+span.current-experience {
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
