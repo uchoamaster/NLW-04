@@ -3,27 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
-    --white:#FFFFFF;
+    --white: #FFFFFF;
     --background: #F2F3F5;
-    --gray-line:#DCDDE0;
+    --gray-line: #DCDDE0;
     --text: #666666;
     --text-highlight: #B3B9FF;
     --title: #2E384D;
-    --red: #E83F5B;
+    --red: #e83f5b;
     --green: #4CD62B;
-    --yellow:#ff0;
     --blue: #5965E0;
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
 }
+
+@media(max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
 body {
     background: var(--background);
     color: var(--text);
 }
 
 body, input, textarea, button {
-    font: 400 1rem "Inter", sans-serif;
+    font: 400 16rem 'Inter', sans-serif;
 }
 
 button {
@@ -31,43 +44,29 @@ button {
 }
 
 a {
-    /*inherit, basicamente vai herdar as cores do containers dos links*/
     color: inherit;
     text-decoration: none;
 }
 
-.container{
+.container {
     height: 100vh;
     max-width: 992px;
-    margin :0 auto;
+    margin: 0 auto;
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
 }
 
-@media(max-width: 1080px){
-    html {
-        font-size: 93.75%
-    }
-}
-@media(max-width: 720px){
-    html {
-        font-size: 87.5%
-    }
-}
-
-
 .experience-bar {
- display: flex;
- align-items: center;
-
+    display: flex;
+    align-items: center;
 }
+
 .experience-bar span {
     font-size: 1rem;
 }
 
 .experience-bar > div {
-    font-size:1rem;
     flex: 1;
     height: 4px;
     border-radius: 4px;
@@ -76,20 +75,14 @@ a {
     position: relative;
 }
 
-.experience-bar > div > div{
-
-   height: 4px;
-   border-radius: 4px;
-   background: var(--yellow); 
-
+.experience-bar > div div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
 }
 
 span.current-experience {
     position: absolute;
     top: 12px;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
 }
