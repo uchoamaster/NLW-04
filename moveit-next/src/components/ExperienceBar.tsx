@@ -13,6 +13,7 @@ export function ExperienceBar(props: ExperienceBarProps) {
     ChallengesContext
   );
   const current = props.current <= props.end ? props.current : props.end;
+  //calculo da barra de experiencia
   const percentToNextLevel = Math.round(
     (currentExperience * 100) / experienceToNextLevel
   );

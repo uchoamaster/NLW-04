@@ -1,6 +1,8 @@
 import { createContext, ReactNode, useState } from 'react';
 import challenges from '../../challenges.json';
 
+
+//objeto do challenge criado para melhorar o desempenho 
 interface Challenge {
   type: 'body' | 'eye';
   description: string;
