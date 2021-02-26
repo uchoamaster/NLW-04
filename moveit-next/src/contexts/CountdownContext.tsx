@@ -12,6 +12,9 @@ interface CountdownContextData {
 
 interface CountdownProviderProps {
     children: ReactNode;
+    level: number;
+    currentExperience: number;
+    challengesCompleted: number;
 }
 
 
