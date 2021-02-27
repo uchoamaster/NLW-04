@@ -47,6 +47,11 @@ export default function Home(props: HomeProps) {
         </CountdownProvider>
         
       </div>
+      <footer className={styles.footer}>
+        <img className={styles.imgfooter} src="/icons/Logo.png" alt="Logo"/>
+       
+  
+      </footer>
     </ChallengesProvider>
   )
 }

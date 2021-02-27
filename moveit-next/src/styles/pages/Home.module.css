@@ -14,3 +14,21 @@
   gap: 6.25rem;
   align-content: center;
 }
+.footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  background: var(--white);
+  padding: 5px 10px;
+  display: flex;
+  align-items:flex-end;
+  align-self: center;
+  align-content: space-around;
+}
+.footer.imgfooter{
+  display: flex;
+  align-items:stretch;
+  align-content: space-around;
+}
+
+

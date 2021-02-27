@@ -15,6 +15,9 @@ export function Profile() {
           <img src="icons/level.svg" alt="level"/>
           Level {level}
         </p>
+        
+        <p className={styles.pfooter}><img className={styles.imgfooter} src="icons/logotipo-do-github.svg" alt="github" width="25"/><a href="https://github.com/uchoamaster" target="_blank">Github</a> </p>
+      
       </div>
     </div>
   )
